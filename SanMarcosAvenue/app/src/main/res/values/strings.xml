@@ -4,8 +4,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">MapaUNMSM</string>
     <string name="title_activity_maps">Map</string>
-    
+
     <string name="facebook_app_id">1363922680289959</string>
 </resources>

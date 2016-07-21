@@ -2,8 +2,13 @@
   <dictionary name="luiz">
     <words>
       <w>facultad</w>
+      <w>facultades</w>
+      <w>institucion</w>
+      <w>instituciones</w>
       <w>lanza</w>
       <w>lista</w>
+      <w>mapa</w>
+      <w>nombre</w>
     </words>
   </dictionary>
 </component>

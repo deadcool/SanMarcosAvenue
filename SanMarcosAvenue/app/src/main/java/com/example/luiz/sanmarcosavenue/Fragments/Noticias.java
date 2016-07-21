@@ -82,7 +82,7 @@ public class Noticias extends Fragment {
                 bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
                 StringBuffer stringBuffer = new StringBuffer();
 
-                String line = "";
+                String line;
                 while((line = bufferedReader.readLine()) != null){
                     stringBuffer.append(line);
                 }
@@ -159,29 +159,6 @@ public class Noticias extends Fragment {
             }else{
                 viewHolder = (ViewHolder)convertView.getTag();
             }
-
-            /*final ProgressBar progressBar = (ProgressBar)convertView.findViewById(R.id.progressBar);
-            ImageLoader.getInstance().displayImage(noticiasModelList.get(position).getImagen(), viewHolder.ivnoticia, new ImageLoadingListener() {
-                @Override
-                public void onLoadingStarted(String imageUri, View view) {
-                    progressBar.setVisibility(View.VISIBLE);
-                }
-
-                @Override
-                public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
-                    progressBar.setVisibility(View.GONE);
-                }
-
-                @Override
-                public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
-                    progressBar.setVisibility(View.GONE);
-                }
-
-                @Override
-                public void onLoadingCancelled(String imageUri, View view) {
-                    progressBar.setVisibility(View.GONE);
-                }
-            });*/
 
             viewHolder.tvtitulo.setText(noticiasModelList.get(position).getTitulo());
             viewHolder.tvdescripcion.setText(noticiasModelList.get(position).getDescripcion());

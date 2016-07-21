@@ -72,7 +72,6 @@ public class Facultad extends Fragment {
     }
 
     public class JSONTask extends AsyncTask<String, String,List<FacultadModel>> {
-
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -93,7 +92,7 @@ public class Facultad extends Fragment {
                 bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
                 StringBuffer stringBuffer = new StringBuffer();
 
-                String line = "";
+                String line;
                 while((line = bufferedReader.readLine()) != null){
                     stringBuffer.append(line);
                 }
